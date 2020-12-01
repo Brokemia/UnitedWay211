@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_county"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:id="@+id/select_county"
+        app:layout_constraintBottom_toTopOf="@id/county_clinton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/county_clinton"
+        android:textSize="20sp"
+        android:padding="20dp"
+        android:id="@+id/county_clinton"
+        android:onClick="selectClinton"
+        app:layout_constraintBottom_toBottomOf="@id/county_essex"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/select_county" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/county_essex"
+        android:textSize="20sp"
+        android:padding="20dp"
+        android:id="@+id/county_essex"
+        android:onClick="selectEssex"
+        app:layout_constraintBottom_toBottomOf="@id/county_franklin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/county_clinton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/county_franklin"
+        android:textSize="20sp"
+        android:padding="20dp"
+        android:id="@+id/county_franklin"
+        android:onClick="selectFranklin"
+        app:layout_constraintBottom_toBottomOf="@id/county_hamilton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/county_essex" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/county_hamilton"
+        android:textSize="20sp"
+        android:padding="20dp"
+        android:id="@+id/county_hamilton"
+        android:onClick="selectHamilton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/county_franklin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

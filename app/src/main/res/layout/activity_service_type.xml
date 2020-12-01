@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ServiceTypeActivity">
+
+    <LinearLayout
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:id="@+id/food_basic_needs_layout"
+        app:layout_constraintBottom_toTopOf="@+id/public_health_layout"
+        app:layout_constraintEnd_toStartOf="@+id/family_needs_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/food_basic_needs_text"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:paddingBottom="15dp"/>
+        <ImageButton
+            android:id="@+id/food_basic_needs_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:onClick="selectFoodBasicNeeds"
+            android:src="@drawable/housing"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:id="@+id/family_needs_layout"
+        app:layout_constraintBottom_toTopOf="@+id/mental_health_counseling_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/food_basic_needs_layout"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/family_needs_text"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:paddingBottom="15dp"/>
+        <ImageButton
+            android:id="@+id/family_needs_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:onClick="selectFamilyNeeds"
+            android:src="@drawable/familyneeds" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:id="@+id/public_health_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/mental_health_counseling_layout"
+        app:layout_constraintTop_toBottomOf="@id/food_basic_needs_layout"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/public_health_text"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:paddingBottom="15dp"/>
+        <ImageButton
+            android:id="@+id/public_health_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:onClick="selectPublicHealth"
+            android:src="@drawable/publichealth" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:id="@+id/mental_health_counseling_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/public_health_layout"
+        app:layout_constraintTop_toBottomOf="@id/family_needs_layout"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mental_health_counseling_text"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:paddingBottom="15dp"/>
+        <ImageButton
+            android:id="@+id/mental_health_counseling_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:onClick="selectMentalHealth"
+            android:src="@drawable/mentalhealth" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ADK United Way 211</string>
+    <string name="select_county">Select Your County</string>
+    <string name="county_clinton">Clinton</string>
+    <string name="county_essex">Essex</string>
+    <string name="county_franklin">Franklin</string>
+    <string name="county_hamilton">Hamilton</string>
+    <string name="food_basic_needs_text"><![CDATA[Food & Basic Needs]]></string>
+    <string name="family_needs_text">Family Needs</string>
+    <string name="public_health_text">Public Health</string>
+    <string name="mental_health_counseling_text"><![CDATA[Mental Health & Counseling]]></string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="phone_label">Phone:</string>
+    <string name="covid19_text">COVID-19</string>
+</resources>
